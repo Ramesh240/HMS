@@ -8,14 +8,20 @@ export default class Register extends Component {
         PhoneNumber:"",
         Gender:"Select",
         Password: "",
-        ConfirmPassword:""
-
+        ConfirmPassword:"",
+        BloodGroup:"A+",
+        Address :"",
+        AccountType:""
     }
     }
     handleChange=(event)=>{
         let name=event.target.name;
         let val=event.target.value;
         this.setState({[name]:val});
+    }
+    onValueChange(e) {
+      
+      this.setState({value: e.target.BloodGroup});
     }
     handleSubmit=(event)=>{
      
@@ -30,7 +36,7 @@ alert("you have registered successfully");
      }
   render() {
     return (
-      <div class="container h-100">
+      <div class="container h-100" >
         <div class="row h-100 justify-content-center align-items-center">
           <div class="col-10 col-md-8 col-lg-6">
         <h1>
@@ -56,13 +62,20 @@ alert("you have registered successfully");
         </label>
         <input type="password" name="ConfirmPassword" onChange={this.handleChange} className="form-control ConfirmPassword"/>
         <br></br>
+     
+          E-Mail
+          <input type="email" name="email" onChange={this.handleChange} className="form-control email"/>
+        <br></br>
+        <div>
         Phone Number
-        <input type="text" onChange={this.handleChange} name="PhoneNumber" className="form-control PhoneNumber"/><br></br>
+        <input type="tel" onChange={this.handleChange} name="PhoneNumber" className="form-control PhoneNumber" pattern='[0-9]{10}' placeholder="0123456789"/><br></br>
+        </div>
         <label>
             Gender</label>
 <select name="Gender" onChange={this.handleChange} value={this.state.Gender} className="form-control Gender">
     <option value="Male"> Male </option>
 <option value="Female"> Female</option>
+<option value="Others">Others</option>
 </select><br></br>
 <label>
   Date of Birth
@@ -71,6 +84,102 @@ alert("you have registered successfully");
       placeholder='Enter BirthDate'
        onChange={this.handleChange}
       />
+      <br></br>
+    
+       <div className='form-control BloodGroup' >
+         <div > Blood Group :</div>
+      
+          <label>
+            <input name="BloodGroup"
+              type="radio" 
+              value="A+"
+              checked={this.state.BloodGroup === "A+"}
+              onChange={this.handleChange}
+            />
+            A+         </label>
+            <label>
+            <input
+              type="radio" name="BloodGroup"
+              value="B+" 
+              checked={this.state.BloodGroup === "B+"}
+              onChange={this.handleChange} />
+            B+
+          </label>
+          <label>
+            <input
+              type="radio" name="BloodGroup" 
+              value="O+"
+              checked={this.state.BloodGroup === "O+"}
+              onChange={this.handleChange}
+            />
+          O+
+          </label>
+          <label>
+            <input
+              type="radio" name="BloodGroup" 
+              value="A-"
+              checked={this.state.BloodGroup === "A-"}
+              onChange={this.handleChange}
+            />
+          A-
+          </label>
+          <label>
+            <input
+              type="radio" name="BloodGroup"
+              value="B-" 
+              checked={this.state.BloodGroup === "B-"}
+              onChange={this.handleChange}
+            />
+          B-
+          </label>
+          <label>
+            <input
+              type="radio" name="BloodGroup"
+              value="O-"
+              checked={this.state.BloodGroup === "O-"}
+              onChange={this.handleChange}
+            />
+          O-
+          </label>
+          <label>
+            <input
+              type="radio" name="BloodGroup"
+              value="AB+"
+              checked={this.state.BloodGroup === "AB+"}
+              onChange={this.handleChange}
+            />
+          AB+
+          </label>
+          <label>
+            <input
+              type="radio" name="BloodGroup"
+              value="AB-"
+              checked={this.state.BloodGroup === "AB-"}
+              onChange={this.handleChange}
+            />
+          AB-
+          </label>
+        </div>
+        <br></br>
+        <div>
+        Address 
+        <textarea name="Address"
+          value={this.state.Address}
+          onChange={this.handleChange}
+        />
+      </div>
+      <div>
+        Account Type:
+        <select name="AccountType" onChange={this.handleChange} value={this.state.AccountType} className="form-control AccountType">
+    <option value="User"> User </option>
+<option value="Doctor"> Doctor</option>
+<option value="BloodDonor">Blood_Donor</option>
+<option value="Admin">Admin</option>
+<option value="Patient">Patient</option>
+
+</select><br></br>
+
+      </div>
 <div class="col-12">
     <div className="form-check">
       <input class="form-check-input is-invalid" type="checkbox" value="" aria-describedby="invalidCheck3Feedback" required/>
