@@ -96,14 +96,14 @@ alert("you have registered successfully");
               checked={this.state.BloodGroup === "A+"}
               onChange={this.handleChange}
             />
-            A+         </label>
+            A<sup>+</sup>      </label>
             <label>
             <input
               type="radio" name="BloodGroup"
               value="B+" 
               checked={this.state.BloodGroup === "B+"}
               onChange={this.handleChange} />
-            B+
+            B<sup>+</sup>
           </label>
           <label>
             <input
@@ -112,7 +112,7 @@ alert("you have registered successfully");
               checked={this.state.BloodGroup === "O+"}
               onChange={this.handleChange}
             />
-          O+
+          O<sup>+</sup>
           </label>
           <label>
             <input
@@ -121,7 +121,7 @@ alert("you have registered successfully");
               checked={this.state.BloodGroup === "A-"}
               onChange={this.handleChange}
             />
-          A-
+          A<sup>-</sup>
           </label>
           <label>
             <input
@@ -130,7 +130,7 @@ alert("you have registered successfully");
               checked={this.state.BloodGroup === "B-"}
               onChange={this.handleChange}
             />
-          B-
+          B<sup>-</sup>
           </label>
           <label>
             <input
@@ -139,7 +139,7 @@ alert("you have registered successfully");
               checked={this.state.BloodGroup === "O-"}
               onChange={this.handleChange}
             />
-          O-
+          O<sup>-</sup>
           </label>
           <label>
             <input
@@ -148,7 +148,7 @@ alert("you have registered successfully");
               checked={this.state.BloodGroup === "AB+"}
               onChange={this.handleChange}
             />
-          AB+
+          AB<sup>+</sup>
           </label>
           <label>
             <input
@@ -157,7 +157,7 @@ alert("you have registered successfully");
               checked={this.state.BloodGroup === "AB-"}
               onChange={this.handleChange}
             />
-          AB-
+          AB<sup>-</sup>
           </label>
         </div>
         <br></br>
