@@ -7,7 +7,7 @@ export class App extends React.Component {
     return (
       <div>
         <header className='App-header'>
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="App-logo" alt="logo"/>
           <h1>Hospital Mangement</h1>
         </header>
         <div className='Main'>
