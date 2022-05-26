@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 export default class Register extends Component {
     constructor(props) {
       super(props)
@@ -26,7 +27,7 @@ export default class Register extends Component {
     handleSubmit=(event)=>{
      
 event.preventDefault();
-if(this.state.Password===this.state.ConfirmPassword )
+if((this.state.Password===this.state.ConfirmPassword) && (this.state.Password).length!==0)
 {
 alert("you have registered successfully");
    }
@@ -36,13 +37,14 @@ alert("you have registered successfully");
      }
   render() {
     return (
-      <div class="container h-100" >
+      <div class="container h-100"  >
+     
         <div class="row h-100 justify-content-center align-items-center">
           <div class="col-10 col-md-8 col-lg-6">
-        <h1>
+        <h1 >
           Registration Form
         </h1>
-<form onSubmit={this.handleSubmit} className="form-example">
+<form onSubmit={this.handleSubmit} className="form-example" >
 <label>
     FirstName</label>
     <input type="text" onChange={this.handleChange} name="FirstName" className='form-control FirstName'/>
