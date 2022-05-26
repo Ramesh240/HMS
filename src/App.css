@@ -19,7 +19,6 @@
 }
 
 .App-header {
-  background-color: #F9EBC8;
   min-height: 40vh;
   display: flex;
   flex-direction: column;
@@ -50,4 +49,7 @@ background-color: #9A86A4;
 .Main{
   background-color: #FEFBE7;
   min-height: 50vh;
+}
+.gf1 {
+  font-family: 'Open Sans', sans-serif;
 }

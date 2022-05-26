@@ -22,24 +22,22 @@ handleSubmit=(event)=>{
     
     return (
       <div class="container h-100" >
-<div class="col-10 col-md-8 col-lg-6">
-        <h1 >
-          Login
-        </h1>
-        <form onSubmit={this.handleSubmit} className="form-example">
-          <label>
-            UserName
-          </label>
-          <input type="email" name="email" placeholder='Enter email Address' onChange={this.handleChange} className="form-control email"/>
-        <br></br>
-        <label>
-          Password
-        </label>
-        <input type="password" name="Password" placeholder='Enter Password' onChange={this.handleChange} className="form-control password"/>
-        <br></br>
-        </form>
-        <input type="submit" value ="Submit" class="btn btn-primary btn-customized"/>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1"/>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
       </div>
     )
   }
