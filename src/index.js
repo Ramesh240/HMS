@@ -25,17 +25,17 @@ const routing=(
               <ul className="navbar-nav ms-auto">
                 <button type="button" className="btn btn-dark">
                 <li className="nav-item">
-                  <Link to ="/">Home</Link>
+                  <Link to ="/"><i class="bi bi-house-door"></i>Home</Link>
                 </li>
                 </button>
                 <button type="button" className="btn btn-dark">
                 <li className="nav-item">
-                  <Link to ="/register" >Register </Link>
+                  <Link to ="/register" ><i class="bi bi-person"></i>Register </Link>
                 </li>
                 </button>
                 <button type="button" className="btn">
                 <li className="nav-item">
-                  <Link to ="/login">Login</Link>
+                  <Link to ="/login"><i class="bi bi-person-check"></i>Login</Link>
                 </li>
                 </button>
               </ul>
