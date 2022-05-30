@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export class login extends React.Component {
   constructor(props) {
@@ -27,18 +28,16 @@ handleSubmit=(event)=>{
           Login
         </h1>
         <form onSubmit={this.handleSubmit} className="form-example">
-          <label>
-            UserName
-          </label>
+          
           <input type="email" name="email" placeholder='Enter email Address' onChange={this.handleChange} className="form-control email"/>
         <br></br>
-        <label>
-          Password
-        </label>
+     
         <input type="password" name="Password" placeholder='Enter Password' onChange={this.handleChange} className="form-control password"/>
         <br></br>
         </form>
         <input type="submit" value ="Submit" class="btn btn-primary btn-customized"/>
+        <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account?  <Link to ="/register" className="link-danger" >Register </Link>
+                 </p>
         </div>
       </div>
     )
