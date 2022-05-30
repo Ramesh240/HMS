@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import './App.css';
 
 export default class Register extends Component {
     constructor(props) {
@@ -14,6 +15,7 @@ export default class Register extends Component {
         BloodGroup:"A+",
         Address :"",
         AccountType:""
+        
     }
     }
     handleChange=(event)=>{
@@ -38,14 +40,14 @@ alert("you have registered successfully");
      }
   render() {
     return (
-      <div class="container h-100"  >
+      <div class="container h-100" >
      
         <div class="row h-100 justify-content-center align-items-center">
           <div class="col-10 col-md-8 col-lg-6">
         <h1 >
           Registration Form
         </h1>
-<form onSubmit={this.handleSubmit} className="form-example" >
+<form onSubmit={this.handleSubmit} className="form-example">
 <label>
     FirstName</label>
     <input type="text" onChange={this.handleChange} name="FirstName" className='form-control FirstName'/>

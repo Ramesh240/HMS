@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-
-export class login extends React.Component {
+export class Login extends React.Component {
   constructor(props) {
     super(props)
   this.state={
@@ -24,8 +23,8 @@ handleSubmit=(event)=>{
     return (
       <div class="container h-100" >
 
-<div class="col-10 col-md-8 col-lg-6">
-        <h1 >
+      <div class="col-10 col-md-8 col-lg-6">
+        <h1>
           Login
         </h1>
         <form onSubmit={this.handleSubmit} className="form-example">
@@ -41,12 +40,11 @@ handleSubmit=(event)=>{
                  </p>
         <input type="submit" value ="Login" class="btn btn-primary btn-customized"/>
         <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account?  <Link to ="/register" className="link-danger" >Register </Link>
-                 </p>
-      
+            </p>
       </div>
       </div>
     )
   }
 }
 
-export default login
+export default Login

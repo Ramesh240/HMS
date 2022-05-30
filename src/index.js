@@ -36,7 +36,7 @@ const routing=(
                 </button>
                 <button type="button" className="btn">
                 <li className="nav-item">
-                  <Link to ="/login"><i class="bi bi-person-check"></i>Login</Link>
+                  <Link to ="/Login"><i class="bi bi-person-check"></i>Login</Link>
                 </li>
                 </button>
               </ul>
