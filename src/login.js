@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-
-export class login extends React.Component {
+export class Login extends React.Component {
   constructor(props) {
     super(props)
   this.state={
@@ -24,8 +23,8 @@ handleSubmit=(event)=>{
     return (
       <div class="container h-100" >
 
-<div class="col-10 col-md-8 col-lg-6">
-        <h1 >
+      <div class="col-10 col-md-8 col-lg-6">
+        <h1>
           Login
         </h1>
         <form onSubmit={this.handleSubmit} className="form-example">
@@ -47,4 +46,4 @@ handleSubmit=(event)=>{
   }
 }
 
-export default login
+export default Login

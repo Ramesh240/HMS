@@ -46,8 +46,9 @@ export class App extends React.Component {
           </button>
         </div>
         </header>
-        <div className='Main'>
-          <h1 className='gf1'>Welcome To Time Hospital!!!</h1>
+        <section id="main">
+        <div>
+          <h1>Welcome To Time Hospital!!!</h1>
           <br></br>
           <ul>Why Time
             <li>
@@ -64,6 +65,7 @@ export class App extends React.Component {
             </li>
           </ul>
         </div>
+        </section>
         <footer class="bg-light text-center text-lg-start">
           <div class="text-center p-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
             &copy; 2022 Copyright:<br>
