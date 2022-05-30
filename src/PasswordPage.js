@@ -30,7 +30,11 @@ alert("you have created a new Password");
     }
   render() {
     return (
-        <div class="col-10 col-md-8 col-lg-6">
+      <div className="container h-100">
+        <div className="col-10 col-md-8 col-lg-6 ">
+          
+            <div className='row h-100 justify-content-center align-items-center'>
+            
           <form onSubmit={this.handleSubmit} className="form-example">
           Create Password 
           <input type="password" name="Password"  onChange={this.handleChange} className="form-control password" required/>
@@ -43,6 +47,8 @@ alert("you have created a new Password");
         <input type="submit" value ="Submit" class="btn btn-primary btn-customized" />
         </Link>
           </form>
+          </div>
+          </div>
       </div>
     )
   }

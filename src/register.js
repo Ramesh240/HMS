@@ -181,9 +181,7 @@ alert("you have registered successfully");
 <option value="BloodDonor">Blood_Donor</option>
 <option value="Admin">Admin</option>
 <option value="Patient">Patient</option>
-
 </select><br></br>
-
       </div>
 <div class="col-12">
     <div className="form-check">
