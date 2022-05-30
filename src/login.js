@@ -30,14 +30,16 @@ handleSubmit=(event)=>{
         </h1>
         <form onSubmit={this.handleSubmit} className="form-example">
           
-          <input type="email" name="email" placeholder='Enter email Address' onChange={this.handleChange} className="form-control email"/>
+          <input type="email" name="email" placeholder='Email Address' onChange={this.handleChange} className="form-control email"/>
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         <br></br>
      
-        <input type="password" name="Password" placeholder='Enter Password' onChange={this.handleChange} className="form-control password"/>
+        <input type="password" name="Password" placeholder='Password' onChange={this.handleChange} className="form-control password"/>
         <br></br>
         </form>
-        <input type="submit" value ="Submit" class="btn btn-primary btn-customized"/>
+        <p class="small fw-bold mt-2 pt-1 mb-0"> <Link to ="/PasswordPage" className="link-danger Blue" >Forgotten Password</Link>
+                 </p>
+        <input type="submit" value ="Login" class="btn btn-primary btn-customized"/>
         <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account?  <Link to ="/register" className="link-danger" >Register </Link>
                  </p>
       

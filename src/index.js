@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {Route,BrowserRouter as Router,Routes,Link} from 'react-router-dom'
 import Register from './register'
 import Login from './login'
+import PasswordPage from './PasswordPage';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -45,7 +46,8 @@ const routing=(
         <Route exact path="/" element={<App/>}/>
         <Route path="/register" element ={<Register/>}/>
         <Route path="/login" element={<Login/>}/>
-        {/* <Route path="/Contact" element={<Contact/>}/> */}
+        <Route path="/passwordPage" element={<PasswordPage/>}/>
+       
         </Routes>
       </div>
     </Router>

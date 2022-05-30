@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 
 export default class Register extends Component {
     constructor(props) {
@@ -193,7 +194,9 @@ alert("you have registered successfully");
       </div>
     </div>
   </div>
+  <Link to ="/" >
 <input type="submit" value ="Submit" class="btn btn-primary btn-customized"/>
+</Link>
 </form>
       </div>
       </div>
