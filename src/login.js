@@ -37,7 +37,7 @@ handleSubmit=(event)=>{
         <input type="password" name="Password" placeholder='Password' onChange={this.handleChange} className="form-control password"/>
         <br></br>
         </form>
-        <p class="small fw-bold mt-2 pt-1 mb-0"> <Link to ="/PasswordPage" className="link-danger Blue" >Forgotten Password</Link>
+        <p class="small fw-bold mt-2 pt-1 mb-0"> <Link to ="/PasswordPage" className="link-Blue" >Forgotten Password?</Link>
                  </p>
         <input type="submit" value ="Login" class="btn btn-primary btn-customized"/>
         <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account?  <Link to ="/register" className="link-danger" >Register </Link>

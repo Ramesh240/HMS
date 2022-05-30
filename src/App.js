@@ -47,7 +47,7 @@ export class App extends React.Component {
         </div>
         </header>
         <div className='Main'>
-          <h1 className='gf1'>Welcome To The Hospital!!!</h1>
+          <h1 className='gf1'>Welcome To Time Hospital!!!</h1>
           <br></br>
           <ul>Why Time
             <li>
@@ -78,4 +78,4 @@ export class App extends React.Component {
   }
 }
 
-export default 
+export default App
