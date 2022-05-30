@@ -23,6 +23,7 @@ handleSubmit=(event)=>{
     
     return (
       <div class="container h-100" >
+
 <div class="col-10 col-md-8 col-lg-6">
         <h1 >
           Login
@@ -30,6 +31,7 @@ handleSubmit=(event)=>{
         <form onSubmit={this.handleSubmit} className="form-example">
           
           <input type="email" name="email" placeholder='Enter email Address' onChange={this.handleChange} className="form-control email"/>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         <br></br>
      
         <input type="password" name="Password" placeholder='Enter Password' onChange={this.handleChange} className="form-control password"/>
@@ -38,7 +40,8 @@ handleSubmit=(event)=>{
         <input type="submit" value ="Submit" class="btn btn-primary btn-customized"/>
         <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account?  <Link to ="/register" className="link-danger" >Register </Link>
                  </p>
-        </div>
+      
+      </div>
       </div>
     )
   }
