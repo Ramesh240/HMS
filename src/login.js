@@ -21,8 +21,8 @@ handleSubmit=(event)=>{
   render() {
     
     return (
-      <div class="container h-100" >
-
+      <div class="container-fluid justify-content-center align-items-center" >
+        <div className='row justify-content-center align-items-center'>
       <div class="col-10 col-md-8 col-lg-6">
         <h1>
           Login
@@ -41,6 +41,7 @@ handleSubmit=(event)=>{
         <input type="submit" value ="Login" class="btn btn-primary btn-customized"/>
         <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account?  <Link to ="/register" className="link-danger" >Register </Link>
             </p>
+      </div>
       </div>
       </div>
     )

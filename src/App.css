@@ -57,3 +57,6 @@ background-color: #9A86A4;
 .form-example {
 font-family: 'Ubuntu', sans-serif;
 }
+.container-fluid {
+  background-color: #F6FBF4;
+}
