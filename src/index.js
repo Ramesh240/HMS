@@ -18,7 +18,7 @@ const routing=(
   <Router>
     <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-              <Link to="/" className="navbar-brand">HMS</Link>
+              <Link to="/" className="navbar-brand">Hospital Management System</Link>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
               </button>

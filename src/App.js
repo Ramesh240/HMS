@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react'
-import img1 from './hospitalimg1.jpg'
-import img2 from './human-skeleton-g56f3393a6_1280.jpg'
-import img3 from './pulse-trace-g2d333539a_1280.jpg'
+import img1 from './images/hospitalimg1.jpg'
+import img2 from './images/human-skeleton-g56f3393a6_1280.jpg'
+import img3 from './images/pulse-trace-g2d333539a_1280.jpg'
 
 export class App extends React.Component {
   render() {
