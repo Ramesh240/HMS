@@ -24,17 +24,17 @@ const routing=(
               </button>
               <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
               <ul className="navbar-nav ms-auto">
-                <button type="button" className="btn btn-dark">
+                <button type="button" className="btn btn-light m-1">
                 <li className="nav-item">
                   <Link to ="/"><i class="bi bi-house-door"></i>Home</Link>
                 </li>
                 </button>
-                <button type="button" className="btn btn-dark">
+                <button type="button" className="btn btn-light m-1">
                 <li className="nav-item">
                   <Link to ="/register" ><i class="bi bi-person"></i>Register </Link>
                 </li>
                 </button>
-                <button type="button" className="btn">
+                <button type="button" className="btn btn-light m-1">
                 <li className="nav-item">
                   <Link to ="/Login"><i class="bi bi-person-check"></i>Login</Link>
                 </li>

@@ -8,7 +8,7 @@ export class App extends React.Component {
   render() {
     return (
       <div className='container-fluid'>
-        <header className='App-header shadow p-3 mb-5 bg-body rounded container mt-3'>
+        <header className='App-header shadow p-3 mb-5 bg-body rounded container-sm mt-3'>
         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
