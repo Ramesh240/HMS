@@ -18,7 +18,7 @@ const routing=(
   <Router>
     <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-              <Link to="/" className="navbar-brand">Hospital Management System</Link>
+              <Link to="/" className="navbar-brand"><b>Hospital Management System</b></Link>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
               </button>
@@ -26,17 +26,17 @@ const routing=(
               <ul className="navbar-nav ms-auto">
                 <button type="button" className="btn btn-light m-1">
                 <li className="nav-item">
-                  <Link to ="/"><i class="bi bi-house-door"></i>Home</Link>
+                  <Link to ="/"><i class="bi bi-house-door"></i><b>Home</b></Link>
                 </li>
                 </button>
                 <button type="button" className="btn btn-light m-1">
                 <li className="nav-item">
-                  <Link to ="/register" ><i class="bi bi-person"></i>Register </Link>
+                  <Link to ="/register" ><i class="bi bi-person"></i><b>Register</b></Link>
                 </li>
                 </button>
                 <button type="button" className="btn btn-light m-1">
                 <li className="nav-item">
-                  <Link to ="/Login"><i class="bi bi-person-check"></i>Login</Link>
+                  <Link to ="/Login"><i class="bi bi-person-check"></i><b>Login</b></Link>
                 </li>
                 </button>
               </ul>
