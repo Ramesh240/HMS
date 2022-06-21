@@ -50,6 +50,7 @@ export class App extends React.Component {
         <div>
           <h1>Welcome To Time Hospital!!!</h1>
           <br></br>
+          <div id="content">
           <ul>Why Time
             <li>
               Round-the-clock doctor availability
@@ -64,6 +65,7 @@ export class App extends React.Component {
               Digitised health records
             </li>
           </ul>
+          </div>
         </div>
         </section>
         <footer class="bg-light text-center text-lg-start">

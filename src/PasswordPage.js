@@ -48,10 +48,11 @@ alert("you have created a new Password");
 
         <input type="submit" value ="Submit" class="btn btn-primary btn-customized" />
         </Link>
+     
           </form>
           </div>
           </div>
-      </div>
+      </div> 
     )
   }
 }
